@@ -19,7 +19,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-with open("crop_pipeline.pkl", "rb") as f:
+with open("crop_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 CLIMATE_DB = {
